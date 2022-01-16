@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu-icon{
+    float:left;
+}
+
+.side-nav{
+    position: fixed;
+    float: left;
+    height: 100%;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    padding: 0;
+    display: flex;
+    width: 0;
+    position: fixed;
+}
+
+ul.no-bullets{
+    list-style-type: none;
+}
+
+
+li a, div a{
+    text-align: left;
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition:0.5s;
+}
+
+.btn-close{
+    text-align: right;
+    top: 0;
+    right: 22px;
+    font-size:36px;
+    padding: 0px;
+    margin: 0px 0px auto 20px;
+}
+
