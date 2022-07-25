@@ -1,17 +1,17 @@
 #header {
     background-color:antiquewhite;
     text-align: center;
-    height: 400px;
+    height: 100vh;
 }
 
 #name {
     font-size: 50px;
     margin-top: 0px;
-    padding-top: 200px;
+    padding-top: 20%;
 }
 
 #jobTitleContainer {
-	margin: 50px 0 0 0;
+	margin: 20px 0 0 0;
 	text-align: center;
     display: inline-block;
     font-size: 32px;
@@ -21,3 +21,37 @@
 	color: #2980b9;
 	border-right: 3px solid #2980b9;
 }
+
+.mouseContainer {
+    padding-top: 50px;
+}
+
+.mouse {
+    margin: 10% auto 0 auto;
+    background-color: rgba(0,0,0,.45);
+    border: 2px solid transparent;
+    border-color: #fff;
+    border-radius: 25px;
+    box-sizing: content-box;
+    height: 28px;
+    opacity: .8;
+    padding: 5px 11px;
+    width: 3px;
+}
+
+.scroller {
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    background-color: #fff;
+    border-radius: 25%;
+    height: 9px;
+    width: 3px;
+}
+
+@keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }

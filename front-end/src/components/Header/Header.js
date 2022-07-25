@@ -64,6 +64,11 @@ const Header = () =>{
                 <span>I'm a </span>
                 <strong id="jobTitle"></strong>
             </div>
+            <a href="#about" className="mouseContainer" >
+                <div className="mouse">
+                    <div className="scroller"></div>
+                </div>
+            </a>
         </div>
     )
 }
