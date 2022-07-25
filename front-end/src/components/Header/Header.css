@@ -1,0 +1,23 @@
+#header {
+    background-color:antiquewhite;
+    text-align: center;
+    height: 400px;
+}
+
+#name {
+    font-size: 50px;
+    margin-top: 0px;
+    padding-top: 200px;
+}
+
+#jobTitleContainer {
+	margin: 50px 0 0 0;
+	text-align: center;
+    display: inline-block;
+    font-size: 32px;
+}
+
+#jobTitle {	
+	color: #2980b9;
+	border-right: 3px solid #2980b9;
+}

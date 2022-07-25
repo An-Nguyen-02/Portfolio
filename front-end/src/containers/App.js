@@ -1,11 +1,13 @@
 import react from 'react';
 import './App.css';
 import Navigation from '../components/Navigation/Navigation.js'
-
+import Header from '../components/Header/Header';
 class App extends react.Component{
-  render(){return (
+  render(){
+    return (
     <div className="App">
-      <Navigation />
+      <Navigation className="Navigation" />
+      <Header />
     </div>
   );}
 }

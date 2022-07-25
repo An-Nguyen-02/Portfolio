@@ -12,7 +12,7 @@ const Navigation = () => {
         document.getElementById("menu-icon").style.display = 'initial';
     }
     return (
-        <div>
+        <div className="Navigation">
             <nav className="navbar">
                 <span className="open-slide">
                     <a href="#" id="menu-icon" onClick={openMenu}>
