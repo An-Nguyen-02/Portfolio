@@ -1,0 +1,81 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+}
+
+.about-head {
+    text-align: left;
+}
+
+.about-body {
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 10% 30% 60%;
+    grid-template-rows: 10% 30% 60% ;
+    grid-template-areas: 
+      ". . . "
+      ". img title"
+      ". img content"
+      ". img info";
+}
+
+.title {
+    grid-area: title;
+}
+
+.content {
+    grid-area: content;
+    border-bottom: 2px solid rgba(0,0,0,.08);
+    margin-bottom: 0;
+    padding-bottom: 27px;
+}
+
+.my-info {
+    margin: 20px;
+    text-align: left;
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 30% 20% 30% 10%;
+    grid-template-rows: 30% 20% 30% 10%;
+    grid-template-areas: 
+    "name . email ."
+    "age . address ."
+    "dl-btn . work-btn ."
+    ". . . ."
+    ;
+}
+
+#my-img {
+    grid-area: img;
+    border: 2px solid rgba(0,0,0,.08);
+    padding: 2px;
+    margin: 20px
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.age {
+    grid-area: age;
+}
+
+.address {
+    grid-area: address;
+}
+
+.download-btn {
+    grid-area: dl-btn;
+}
+
+.work-btn {
+    grid-area: work-btn;
+}
