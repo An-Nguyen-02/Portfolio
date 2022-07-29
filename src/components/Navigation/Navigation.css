@@ -9,6 +9,12 @@
 
 #menu-icon{
     float:left;
+    border-color: white;
+    border-width: 0px;
+    border-style: none;
+    border-image: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .side-nav{
@@ -50,5 +56,8 @@ li a, div a{
     font-size:36px;
     padding: 0px;
     margin: 0px 0px auto 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
 }
 

@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
-import './Header.css';
+import './Home.css';
 
-const Header = () =>{
+const Home = () =>{
     useEffect(()=>{
         const jobTitles = ['Developer','Student'];
         // Current sentence being processed
@@ -58,7 +58,7 @@ const Header = () =>{
     })
     
     return (
-        <div id="header">
+        <div id="home">
             <h1 id="name">An <span>Nguyen</span></h1>
             <div id="jobTitleContainer">
                 <span>I'm a </span>
@@ -73,4 +73,4 @@ const Header = () =>{
     )
 }
 
-export default Header;
+export default Home;

@@ -1,4 +1,4 @@
-.about {
+#about {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -44,7 +44,7 @@
     grid-template-areas: 
     "name . email ."
     "age . address ."
-    "dl-btn . work-btn ."
+    "cv . work ."
     ". . . ."
     ;
 }
@@ -72,10 +72,10 @@
     grid-area: address;
 }
 
-.download-btn {
-    grid-area: dl-btn;
+.cv {
+    grid-area: cv;
 }
 
-.work-btn {
-    grid-area: work-btn;
+.work {
+    grid-area: work;
 }

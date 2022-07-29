@@ -1,9 +1,12 @@
 import React from "react";
-import './About.css'
+import './About.css';
+import '../CustomAnchor/CustomAnchor'
+import CustomAnchor from "../CustomAnchor/CustomAnchor";
+import CVfile from './An_Nguyen_CV.pdf'
 
 const About = () =>{
     return (
-        <div className="about">
+        <div id="about">
             <div className="about-head">
                 <h1>About me</h1>
                 <p>Get to know me</p>
@@ -22,8 +25,8 @@ const About = () =>{
                         <p className="email">Email:</p>
                         <p className="age">Age:</p>
                         <p className="address">Address:</p>
-                        <a href="#about" className="download-btn">Download CV</a>
-                        <a href="#about" className="work-btn">My work</a>
+                        <CustomAnchor href={CVfile} isCV download>Download CV</CustomAnchor>
+                        <CustomAnchor href="#portfolio" isWork>My work</CustomAnchor>
                     </div>
             </div>
         </div>

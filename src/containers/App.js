@@ -1,14 +1,14 @@
 import react from 'react';
 import './App.css';
 import Navigation from '../components/Navigation/Navigation.js'
-import Header from '../components/Header/Header';
+import Home from '../components/Home/Home';
 import About from '../components/About/About';
 class App extends react.Component{
   render(){
     return (
     <div className="App">
       <Navigation className="Navigation" />
-      <Header />
+      <Home />
       <About />
     </div>
   );}
