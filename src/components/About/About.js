@@ -21,7 +21,7 @@ const About = () =>{
                         Main content
                     </div>
                     <div className="my-info">
-                        <p className="name">Name:</p>
+                        <p className="my-name">Name:</p>
                         <p className="email">Email:</p>
                         <p className="age">Age:</p>
                         <p className="address">Address:</p>

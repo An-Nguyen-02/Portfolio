@@ -1,0 +1,22 @@
+#portfolio {
+    text-align: left;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    margin-top: 10vh;
+}
+
+.sorting {
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.work-container {
+    margin-top: 50px;
+    display: grid;
+    row-gap: 50px;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}

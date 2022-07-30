@@ -7,7 +7,7 @@ const data = [
         date: "January, 02 2022",
         images: [
             "https://flic.kr/p/2nAHehc",
-            "https://flic.kr/p/2nAFPXC"
+            `https://live.staticflickr.com/65535/52244716238_8b135884ed_b.jpg`
         ],
         url: "https://an-nguyen-02.github.io/First-landing-page/",
         sourceCode: "https://github.com/An-Nguyen-02/First-landing-page",

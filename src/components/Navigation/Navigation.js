@@ -28,10 +28,10 @@ const Navigation = () => {
                
                 <ul className="no-bullets" aria-hidden="true">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About me</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a> </li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact me</a> </li> 
+                    <li><a href="#contact">Contact</a> </li> 
                 </ul>
                 <button className="btn-close" onClick={closeMenu}>&times;</button>
             </div>
