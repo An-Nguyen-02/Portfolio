@@ -1,7 +1,24 @@
 import React, {useEffect} from "react";
-import './Home.css';
+import {
+    Box,
+    Link,
+    Heading,
+    Flex,
+    Text,
+    Spacer,
+    Container,
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem,
+    IconButton,
+    useColorModeValue,
+    Button,
+    VStack,
+  } from '@chakra-ui/react';
+  import './Home.scss'
 
-const Home = () =>{
+  export const Home = () => {
     useEffect(()=>{
         const jobTitles = ['Developer','Student'];
         // Current sentence being processed
@@ -56,21 +73,21 @@ const Home = () =>{
         // Start the typing effect on load
         _INTERVAL_VAL = setInterval(Type, 100);
     })
-    
-    return (
-        <div id="home">
-            <h1 id="name">An <span>Nguyen</span></h1>
-            <div id="jobTitleContainer">
-                <span>I'm a </span>
-                <strong id="jobTitle"></strong>
-            </div>
-            <a href="#about" className="mouseContainer" >
-                <div className="mouse">
-                    <div className="scroller"></div>
-                </div>
-            </a>
-        </div>
-    )
-}
 
-export default Home;
+    return (
+        <Flex id='home' flexDirection="column" justifyContent="space-between" alignItems="center" height="100vh">
+            <Box paddingTop="40vh">
+                <Heading size="4xl">An Nguyen</Heading>
+                <Flex margin="20px 0 0 0" gap="10px" justifyContent="center" fontSize="3xl">
+                    <Text>I'm a </Text>
+                    <Text as='em' id='jobTitle' borderRight="3px solid #2980b9" color="#2980b9"/>
+                </Flex>
+            </Box>
+            <Link href='#about' paddingBottom="3%">
+                <Box className="mouse">
+                    <Box className="scroller"></Box>
+                </Box>
+            </Link>
+        </Flex>
+    )
+  }

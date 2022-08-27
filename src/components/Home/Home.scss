@@ -5,30 +5,9 @@
     overflow: hidden;
 }
 
-#name {
-    font-size: 50px;
-    margin-top: 0px;
-    padding-top: 20%;
-}
-
-#jobTitleContainer {
-	margin: 20px 0 0 0;
-	text-align: center;
-    display: inline-block;
-    font-size: 32px;
-}
-
-#jobTitle {	
-	color: #2980b9;
-	border-right: 3px solid #2980b9;
-}
-
-.mouseContainer {
-    padding-top: 50px;
-}
 
 .mouse {
-    margin: 10% auto 0 auto;
+    margin-bottom: 5%;
     background-color: rgba(0,0,0,.45);
     border: 2px solid transparent;
     border-color: #fff;

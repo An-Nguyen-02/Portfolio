@@ -2,7 +2,7 @@ const data = [
     {
         id: 1,
         name: "First landing page",
-        type: ["Basic", "Web development"],
+        type: ["Web development"],
         brief:"Simple website to subscribe to my email",
         date: "January, 02 2022",
         images: [
@@ -17,7 +17,7 @@ const data = [
     {
         id: 2,
         name: "Machine Learning Python",
-        type: ["Intermediate", "Other"],
+        type: ["Machine Learning"],
         brief: "Showcase some machine learning algorithms I learnt through Python",
         date: "May, 15 2022",
         images:[
@@ -31,7 +31,7 @@ const data = [
     {
         id: 3,
         name: "Native Meal",
-        type: ["Advance", "Mobile App development"],
+        type: ["Mobile App development"],
         brief: "A mobile app to other food from nearby restaurant",
         date: "March, 6 2022",
         images:[
@@ -45,7 +45,7 @@ const data = [
     {
         id: 4,
         name: "Face Recognition website",
-        type: ["Intermediate", "Web development"],
+        type: ["Web development"],
         brief: "A website to put in a png image url and it will detect faces in the image",
         date: "January, 2 2022",
         images:[
@@ -59,7 +59,7 @@ const data = [
     {
         id: 5,
         name: "Shopping website",
-        type: ["Advance","Web development"],
+        type: ["Web development"],
         brief: "A fully responsive shopping website where user can buy and pay for different kind of clothings",
         date: "",
         images:[
@@ -73,7 +73,7 @@ const data = [
     {
         id: 6,
         name: "Music synchronization",
-        type: ["Basic","Other"],
+        type: ["Signal processing"],
         brief: "A project to synchronize different singing of a same song using Dynamic Time Warping algorithm",
         date: "January, 23 2022",
         images:[
@@ -87,7 +87,7 @@ const data = [
     {
         id: 7,
         name: "Robo Search",
-        type: ["Basic","Web development"],
+        type: ["Web development"],
         brief: "An interactive website that sort robots by name",
         date: "January, 2 2022",
         images:[
@@ -101,7 +101,7 @@ const data = [
     {
         id: 8,
         name: "Pairs Game",
-        type: ["Advance","Other"],
+        type: ["Game"],
         brief: "A pair game, user after finding all the pair win the game",
         date: "July, 2021",
         images:[

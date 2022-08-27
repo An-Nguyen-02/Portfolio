@@ -1,42 +1,23 @@
-import react from "react";
-import './Navigation.css'
+import {
+    Link,
+    useColorModeValue,
+    VStack,
+  } from '@chakra-ui/react';
+  import { Logo } from '../Logo/Logo';
 
 
-const Navigation = () => {
-    const openMenu = () => {
-        document.getElementById("side-menu").style.width = '210px';
-        document.getElementById("menu-icon").style.display = 'none';
-    }
-    const closeMenu = () => {
-        document.getElementById("side-menu").style.width = '0px';
-        document.getElementById("menu-icon").style.display = 'initial';
-    }
+export const Navigation = () => {
+    const textColor = useColorModeValue('white', 'gray.800')
+    const bgColor = useColorModeValue('black','white')
     return (
-        <div className="Navigation">
-            <nav className="navbar">
-                <span className="open-slide">
-                    <button id="menu-icon" onClick={openMenu}>
-                        <svg width={30} height={30} >
-                            <path d="M0,5 30,5" stroke="#000" strokeWidth={5}/>
-                            <path d="M0,14 30,14" stroke="#000" strokeWidth={5}/>
-                            <path d="M0,23 30,23" stroke="#000" strokeWidth={5}/>
-                        </svg>
-                    </button>
-                </span>
-            </nav>
-            <div id="side-menu" className="side-nav">
-               
-                <ul className="no-bullets" aria-hidden="true">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a> </li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a> </li> 
-                </ul>
-                <button className="btn-close" onClick={closeMenu}>&times;</button>
-            </div>
-        </div>
+
+    <VStack width="15%" textColor={textColor} bgColor={bgColor} gap="5%" zIndex="3" position="fixed" height="100vh" overflowX="hidden">
+        <Logo />
+        <Link href="#home">Home</Link>
+        <Link href='#about'>About</Link>
+        <Link href='#portfolio'>Portfolio</Link>
+        <Link href='#bio'>Bio</Link>
+        <Link href='#contact'>Contact</Link>
+    </VStack>
     )
 }
-
-export default Navigation;

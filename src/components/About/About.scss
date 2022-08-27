@@ -5,33 +5,21 @@
     height: 100vh;
     width: 100vw;
     max-width: 100%;
+    margin-left: 2%;
 }
 
-.about-head {
-    text-align: left;
-}
-
-.about-body {
+#about-body {
     width: 100vw;
     height: 90vh;
     max-width: 100%;
     display: grid;
-    grid-template-columns: 10% 30% 60%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 10% 20% 40% 30%;
     grid-template-areas: 
-      ". . . "
-      ". img title"
-      ". img content"
-      ". img info";
-}
-
-.title {
-    grid-area: title;
-}
-
-.content {
-    grid-area: content;
-    border-bottom: 2px solid rgba(0,0,0,.08);
+      ". . "
+      "img title"
+      "img content"
+      "img info";
 }
 
 #my-img {
@@ -41,42 +29,16 @@
     margin: 20px
 }
 
-.my-info {
+#my-info {
     margin-top: 20px;
     text-align: left;
     grid-area: info;
     display: grid;
     grid-template-columns: 30% 20% 30% 10%;
-    grid-template-rows: 20% 20% 40% 10%;
+    grid-template-rows: 20% 20% 50%;
     grid-template-areas: 
     "name . email ."
     "age . address ."
     "cv . work ."
-    ". . . ."
     ;
-}
-
-
-.my-name {
-    grid-area: name;
-}
-
-.email {
-    grid-area: email;
-}
-
-.age {
-    grid-area: age;
-}
-
-.address {
-    grid-area: address;
-}
-
-.cv {
-    grid-area: cv;
-}
-
-.work {
-    grid-area: work;
 }

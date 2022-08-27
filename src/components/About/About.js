@@ -1,36 +1,37 @@
-import React from "react";
-import './About.css';
-import '../CustomAnchor/CustomAnchor'
-import CustomAnchor from "../CustomAnchor/CustomAnchor";
-import CVfile from './An_Nguyen_CV.pdf'
-
-const About = () =>{
+import {
+    Box,
+    Text,
+    Button,
+    Heading,
+    Image,
+    LinkOverlay,
+  } from '@chakra-ui/react';
+  import CVfile from './An_Nguyen_CV.pdf';
+  import './About.scss'
+  export const About = () => {
     return (
-        <div id="about">
-            <div className="about-head">
-                <h1>About me</h1>
-                <p>Get to know me</p>
-            </div>
-            <div className="about-body">
-                <img src="" alt="An Nguyen" id="my-img"/>
-
-                    <div className="title">
-                        Content title
-                    </div>
-                    <div className="content">
-                        Main content
-                    </div>
-                    <div className="my-info">
-                        <p className="my-name">Name:</p>
-                        <p className="email">Email:</p>
-                        <p className="age">Age:</p>
-                        <p className="address">Address:</p>
-                        <CustomAnchor href={CVfile} isCV download>Download CV</CustomAnchor>
-                        <CustomAnchor href="#portfolio" isWork>My work</CustomAnchor>
-                    </div>
-            </div>
-        </div>
+        <Box id="about">
+            <Box textAlign="left">
+                <Heading as="h1" size="4xl">About me</Heading>
+                <Text>About me</Text>
+            </Box>
+            <Box id="about-body">
+                <Image id="my-img" src="" alt="An Nguyen" />
+                <Box gridArea="title">
+                    <Text>Content Title</Text>
+                </Box>
+                <Box gridArea="content" borderBottom="2px solid rgba(0,0,0,.08)">
+                    <Text>Main Content</Text>
+                </Box>
+                <Box id="my-info">
+                    <Text gridArea="name">Name:</Text>
+                    <Text gridArea="email">Email:</Text>
+                    <Text gridArea="age">Age:</Text>
+                    <Text gridArea="address">Address:</Text>
+                    <Button gridArea="cv" alignSelf="flex-end"><LinkOverlay href={CVfile}>Download CV</LinkOverlay></Button>
+                    <Button gridArea="work" alignSelf="flex-end"><LinkOverlay href="#portfolio">My Work</LinkOverlay></Button>
+                </Box>
+            </Box>
+        </Box>
     )
-}
-
-export default About;
+  }
