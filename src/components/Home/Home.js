@@ -77,10 +77,14 @@ import {
     return (
         <Flex id='home' flexDirection="column" justifyContent="space-between" alignItems="center" height="100vh">
             <Box paddingTop="40vh">
-                <Heading size="4xl">An Nguyen</Heading>
+                <Flex>
+
+                    <Heading size="4xl">An</Heading>
+                    <Heading size="4xl" textColor="red.500" marginLeft="10px">Nguyen</Heading>
+                </Flex>
                 <Flex margin="20px 0 0 0" gap="10px" justifyContent="center" fontSize="3xl">
                     <Text>I'm a </Text>
-                    <Text as='em' id='jobTitle' borderRight="3px solid #2980b9" color="#2980b9"/>
+                    <Text as='b' id='jobTitle' borderRight="3px solid #2980b9" color="#2980b9" />
                 </Flex>
             </Box>
             <Link href='#about' paddingBottom="3%">

@@ -8,8 +8,8 @@ export const Bio = () => {
 
     return (
         <Box id="bio" background={"gray.300"}>
-            <Box>
-                <Heading as="h1" size="3xl" textAlign={"left"} marginBottom={"5%"}>Bio</Heading>
+            <Box margin="0 0 5% 2%">
+                <Heading as="h1" size="3xl" textAlign={"left"}>Bio</Heading>
             </Box>
             <VerticalTimeline>
                 <VerticalTimelineElement
@@ -21,7 +21,7 @@ export const Bio = () => {
                     icon={<MdWork />}
                 >
                     <Heading as={"h3"} size="md" className="vertical-timeline-element-title">Research Assistant</Heading>
-                    <Heading as={"h4"} size="sm" className="vertical-timeline-element-subtitle">Tampere, Finland</Heading>
+                    <Heading as={"h4"} size="sm" className="vertical-timeline-element-subtitle" whiteSpace="nowrap">Tampere, Finland</Heading>
                     <Text>
                         Mechanical design and implementation, Semiconductor Laser test and simulation
                     </Text>

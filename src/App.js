@@ -17,7 +17,7 @@ import {Footer} from './components/Footer/Footer'
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" overflowX="hidden" fontSize="xl">
+      <Flex flexDirection="row" textAlign="center" overflowX="hidden" fontSize="xl">
         <Flex width="100%" flexDirection="row">
               <Navigation />
               <Box marginLeft="15%" width="85%">
@@ -30,7 +30,7 @@ function App() {
               </Box>
               <ColorModeSwitcher />
           </Flex>
-      </Box>
+      </Flex>
     </ChakraProvider>
   );
 }

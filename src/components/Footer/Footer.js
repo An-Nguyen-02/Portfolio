@@ -3,7 +3,8 @@ import './Footer.scss'
 import {AiFillHome} from 'react-icons/ai';
 import {SiTelegram} from 'react-icons/si'
 import {ImPhone} from 'react-icons/im'
-import {FaFacebook, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
+import {FaFacebookSquare, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
+import { IconContext } from "react-icons";
 export const Footer = () => {
 
     return (
@@ -32,9 +33,26 @@ export const Footer = () => {
 
                 <Flex paddingBottom="25px" paddingTop="25px">
                     <Flex gap="10px" width="100%">
-                        <FaFacebook />
-                        <FaLinkedin  />
-                        <FaGithubSquare />
+                        
+                        <Link href="https://www.facebook.com/nhatan0209">
+                            <IconContext.Provider value={{color:"#4267B2"}}>
+                                <FaFacebookSquare />
+                            </IconContext.Provider>
+                        </Link>
+                        
+                        <Link href="https://www.linkedin.com/in/an-nhat-nguyen/">
+                            <IconContext.Provider value={{color:"#0A66C2"}}>
+                                <FaLinkedin  />
+                            </IconContext.Provider>
+                        </Link>
+
+                        <Link href="https://github.com/An-Nguyen-02">
+                            <IconContext.Provider value={{color:"#fafafa"}}>
+                                <FaGithubSquare />
+                            </IconContext.Provider>
+                        </Link>
+
+                        
                     </Flex>
                     <Text fontSize="xs" whiteSpace="nowrap">Copyright 2022 by An Nguyen. All Rights Reserved</Text>
                 </Flex>
