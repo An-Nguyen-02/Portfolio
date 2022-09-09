@@ -1,7 +1,6 @@
 import {Box, Text, Heading, Input, Textarea} from "@chakra-ui/react";
 import './Contact.scss'
 export const Contact = () => {
-
     return (
         <Box id="contact" padding="85px 40px" backgroundColor="#f7f7f7">
             <Box textAlign="left" marginBottom="48px">

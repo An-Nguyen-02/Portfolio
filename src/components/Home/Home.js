@@ -72,11 +72,11 @@ import {
         }
         // Start the typing effect on load
         _INTERVAL_VAL = setInterval(Type, 100);
-    })
+    },[])
 
     return (
         <Flex id='home' flexDirection="column" justifyContent="space-between" alignItems="center" height="100vh">
-            <Box paddingTop="40vh">
+            <Box paddingTop="40vh" id="homeInner">
                 <Flex>
 
                     <Heading size="4xl">An</Heading>

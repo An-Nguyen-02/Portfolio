@@ -1,16 +1,28 @@
-import {Box, Text, Heading, Flex, Link} from "@chakra-ui/react";
+import { useContext, useEffect } from "react";
+import {Text, Flex, Link} from "@chakra-ui/react";
 import './Footer.scss'
 import {AiFillHome} from 'react-icons/ai';
 import {SiTelegram} from 'react-icons/si'
 import {ImPhone} from 'react-icons/im'
 import {FaFacebookSquare, FaLinkedin, FaGithubSquare} from 'react-icons/fa'
 import { IconContext } from "react-icons";
+import { WindowContext } from '../../App';
 export const Footer = () => {
+    const {windowDimension, PhoneWidthChange} = useContext(WindowContext);
+    
+
+    useEffect(()=>{
+        const infoContainer = document.getElementById("info-container");
+        if (windowDimension.winWidth <= PhoneWidthChange){
+            infoContainer.setAttribute("style","flex-direction:column; row-gap:50px")
+        }
+
+    },[windowDimension])
 
     return (
         <Flex id="footer">
 
-                <Flex padding="80px 0" borderBottom="2px solid rgba(255,255,255,.8 )">
+                <Flex padding="80px 0" borderBottom="2px solid rgba(255,255,255,.8 )" id="info-container">
                     <Flex flexDirection="column" padding="0 15px" alignItems="center" width="100%">
                         <AiFillHome size="46px"/>
                         <Text fontSize="15px">
