@@ -66,7 +66,7 @@ function App() {
                     <Contact />
                     <Footer />
                 </Box>
-                <ColorModeSwitcher />
+                {/* <ColorModeSwitcher /> */}
             </Flex>
 
       </ChakraProvider>

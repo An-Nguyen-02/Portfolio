@@ -7,7 +7,7 @@ import {GiNewBorn} from 'react-icons/gi'
 export const Bio = () => {
 
     return (
-        <Box id="bio" background={"gray.300"}>
+        <Box id="bio" background={"gray.300"} marginTop="100px">
             <Box margin="0 0 5% 2%">
                 <Heading as="h1" size="3xl" textAlign={"left"}>Bio</Heading>
             </Box>

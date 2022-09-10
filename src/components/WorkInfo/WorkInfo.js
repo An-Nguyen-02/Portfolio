@@ -8,7 +8,8 @@ import {
     Text,
     Box,
     ModalHeader,
-    Image,
+    Heading,
+    Link
 } from '@chakra-ui/react';
 import {Slider} from '../Slider/Slider';
 import './WorkInfo.scss'
@@ -19,7 +20,7 @@ export const WorkInfo = ({project, isOpen, onClose}) => {
             <ModalContent>
 
                 <ModalHeader>
-                    {name}
+                <Heading as="h2">{name}</Heading>
                 </ModalHeader>
 
                 <ModalCloseButton />
@@ -27,14 +28,20 @@ export const WorkInfo = ({project, isOpen, onClose}) => {
 
                         <Slider items={images} className="slider" />
 
-                        <Box gridArea="content">
-                            {name}
+                        <Box gridArea="content" marginLeft="10px">
+                            <Text fontSize="2xl" as="b">{brief}</Text>
+                            <Text fontSize="md" marginTop="10px">{detail}</Text>
                         </Box>
                         <Box className='info'>
                             <Text gridArea="date">Date: {date}</Text>
                             <Text gridArea="category">Category: {type.join(', ')}</Text>
                             <Text gridArea="tech">Technologies: {technologies.join(', ')}</Text>
-                            <Button gridArea="project-btn">Visit Project</Button>
+                            <Link href={url} target="_blank" gridArea="project-btn">
+                                <Button>Visit Project</Button>
+                            </Link>
+                            <Link href={sourceCode} target="_blank" gridArea="source-code-btn">
+                                <Button>See source code</Button>
+                            </Link>
                         </Box>
                 </ModalBody>
             </ModalContent>

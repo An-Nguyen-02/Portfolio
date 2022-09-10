@@ -14,7 +14,7 @@ export const WorkCard = ({project}) => {
         <Box
             className="image"
             style={{
-                backgroundImage: `url(${images[1]})`
+                backgroundImage: `url(${images[0]})`
             }}
             />
             <Text className='name'>{name}</Text>
