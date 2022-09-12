@@ -5,16 +5,6 @@ import {
     Heading,
     Flex,
     Text,
-    Spacer,
-    Container,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    IconButton,
-    useColorModeValue,
-    Button,
-    VStack,
   } from '@chakra-ui/react';
   import './Home.scss'
 
@@ -80,11 +70,11 @@ import {
                 <Flex>
 
                     <Heading size="4xl">An</Heading>
-                    <Heading size="4xl" textColor="red.500" marginLeft="10px">Nguyen</Heading>
+                    <Heading size="4xl" textColor="red.800" marginLeft="10px">Nguyen</Heading>
                 </Flex>
                 <Flex margin="20px 0 0 0" gap="10px" justifyContent="center" fontSize="3xl">
                     <Text>I'm a </Text>
-                    <Text as='b' id='jobTitle' borderRight="3px solid #2980b9" color="#2980b9" />
+                    <Text as='b' id='jobTitle' borderRight="3px solid #2980b9" color="red.800" />
                 </Flex>
             </Box>
             <Link href='#about' paddingBottom="3%">

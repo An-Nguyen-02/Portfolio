@@ -14,7 +14,7 @@ import {
 import {Slider} from '../Slider/Slider';
 import './WorkInfo.scss'
 export const WorkInfo = ({project, isOpen, onClose}) => {
-    const {id, name, brief, date, images, url, type, sourceCode, technologies, detail} = project;
+    const { name, brief, date, images, url, type, sourceCode, technologies, detail} = project;
     return (
         <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose} size="full">
             <ModalContent>

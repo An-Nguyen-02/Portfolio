@@ -1,3 +1,6 @@
+$sm: 30em;
+$lg: 62em;
+
 #about {
     display: flex;
     flex-direction: column;
@@ -19,6 +22,26 @@
       "img title"
       "img content"
       "img info";
+    
+    @media screen and (max-width: $sm) {
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 10% 25% 30%;
+        grid-template-areas: 
+        "img"
+        "title"
+        "content"
+        "info";
+    }
+
+    @media screen and (max-width: $lg) {
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 10% 25% 30%;
+        grid-template-areas: 
+        "img"
+        "title"
+        "content"
+        "info";
+    }
 }
 
 #my-img {
@@ -27,6 +50,12 @@
     height: 100%;
     border: 2px solid rgba(0,0,0,.08);
     padding: 2px;
+    border-radius: 0%;
+
+    @media screen and (max-width: $lg) {
+        border-radius:50%; 
+        width: 240px;
+    }
 }
 
 #my-info {
@@ -39,6 +68,59 @@
     grid-template-areas: 
     "name . email ."
     "age . address ."
-    "cv . work ."
-    ;
+    "cv . work .";
+
+    @media screen and (max-width: $sm) {
+        margin-top: 5px;
+        row-gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-areas: 
+        "name" 
+        "email"
+        "age"
+        "address"
+        "cv"
+    }
+
+    @media screen and (max-width: $lg) {
+        margin-top: 5px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 30% 40%;
+        grid-template-areas: 
+        "name email" 
+        "age address"
+        "cv .";
+    }
+}
+
+#title {
+    font-size: 35px;
+    @media screen and (max-width: $lg){
+        font-size: 25px;
+    }
+
+}
+
+#content {
+    font-size: 25px;
+    @media screen and (max-width: $lg){
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: $sm){
+        font-size: 16px;
+    }
+}
+
+#buttonCV {
+    @media screen and (max-width: $sm){
+        margin-top: 20px;
+        width: 200px;
+    }
+
+    @media screen and (max-width: $lg){
+        margin-top: 20px;
+        width: 200px;
+    }
 }

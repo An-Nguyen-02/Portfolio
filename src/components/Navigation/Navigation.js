@@ -13,16 +13,34 @@ import {
   } from '@chakra-ui/react';
 import myHypeImage from './MyHypeImage.png'
 import ScrollMagic from 'scrollmagic';
-import {useContext, useEffect } from 'react';
+import {useState, useEffect } from 'react';
 import './Navigation.scss'
-import { WindowContext } from '../../App';
 
 
 export const Navigation = () => {
-    const {windowDimension, WinWidthChange} = useContext(WindowContext);
-    let controller = new ScrollMagic.Controller({globalSceneOptions: {duration: windowDimension.winHeight}});
-    const textColor = useColorModeValue('white', 'gray.800')
-    const bgColor = useColorModeValue('black','white')
+    const [windowDimension, detectHW] = useState({
+        winWidth: window.innerWidth,
+        winHeight: window.innerHeight,
+      })
+    
+      const WinWidthChange = 992;
+      const detectSize = () => {
+        detectHW({
+          winWidth: window.innerWidth,
+          winHeight: window.innerHeight,
+        })
+      }
+      let controller = new ScrollMagic.Controller({globalSceneOptions: {duration: windowDimension.winHeight}});
+      const textColor = useColorModeValue('white', 'gray.800')
+      const bgColor = useColorModeValue('black','white')
+    
+      useEffect(() => {
+        window.addEventListener('resize', detectSize)
+    
+        return () => {
+          window.removeEventListener('resize', detectSize)
+        }
+      }, [windowDimension])
 
 
 

@@ -21,7 +21,7 @@ export const Portfolio = () => {
 
     return (
         <Box id="portfolio">
-            <Box>
+            <Box marginBottom="20px">
                 <Heading as="h1" size="3xl">Portfolio</Heading>
                 <Text>Showcasing my work</Text>
             </Box>

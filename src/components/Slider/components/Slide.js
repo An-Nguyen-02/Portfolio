@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Box } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 import "./../styles.scss";
 
 export const Slide = ({ url }) => {

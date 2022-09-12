@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import {React} from 'react';
 import './WorkCard.scss';
 import {WorkInfo} from '../WorkInfo/WorkInfo';
 import { motion } from 'framer-motion';
@@ -18,7 +18,7 @@ export const WorkCard = ({project}) => {
             }}
             />
             <Text className='name'>{name}</Text>
-            <Button onClick={onOpen} className='more-info-btn'>More info</Button>
+            <Button onClick={onOpen} className="more-info-btn">More info</Button>
             <WorkInfo isOpen={isOpen} onClose={onClose} project={project} />
     </motion.div>
     )
