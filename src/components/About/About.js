@@ -12,7 +12,7 @@ import CVfile from './An_Nguyen_CV.pdf';
 import './About.scss'
 import myImage from './MyImage.jpg'
 export const About = () => {
-
+    const currentDate = new Date()
     return (
         <Box id="about">
             <Box textAlign="left">
@@ -21,11 +21,11 @@ export const About = () => {
             <Box id="about-body">
                 <Image id="my-img" src={myImage} alt="An Nguyen" />
                 <Box gridArea="title">
-                    <Text as="b" id="title">I'm a tech enthusiast, web developer, magician</Text>
+                    <Text as="b" id="title">I'm a tech enthusiast, web developer, and magician</Text>
                 </Box>
                 <Box gridArea="content" borderBottom="2px solid rgba(0,0,0,.08)">
-                    <Text textAlign="left"id="content">I am a Software Engineering student at Tampere University who loves to try out new things, learn new technologies. I've been learning React and now looking for a Junior, intern position with it.
-                        Besides from studying, I like gaming, hit the gym, play badminton, and doing some magic.
+                    <Text textAlign="left"id="content">I am a student studying Master's degree in Software, Web, and Cloud at Tampere University who loves to try out new things, learn new technologies. I've been working with ReactJS, Ruby on Rails, Docker, PostgreSQL for {(currentDate.getFullYear() + (currentDate.getMonth()+1)/12 - 2023 - 5/12).toFixed(1)} years.
+                        Other than that, I've worked with Java, AWS for backend development. Besides from studying, I like gaming, hit the gym, play badminton, and doing some magic.
                     </Text>
                 </Box>
                 <Box id="my-info">
@@ -41,7 +41,7 @@ export const About = () => {
                     </Flex>
                     <Flex gridArea="age">
                         <Text as="b">Age:</Text>
-                        <Text marginLeft="10px">20</Text>   
+                        <Text marginLeft="10px">{new Date().getFullYear()-2002}</Text>   
                     </Flex>
                     <Flex gridArea="address">
                         <Text as="b">Address:</Text>
