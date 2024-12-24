@@ -10,7 +10,7 @@ import {
 
   export const Home = () => {
     useEffect(()=>{
-        const jobTitles = ['Developer','Student'];
+        const jobTitles = ['Full-stack developer','Cloud developer'];
         // Current sentence being processed
         var _PART = 0;
 

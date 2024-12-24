@@ -12,12 +12,6 @@ export const Footer = () => {
 
                 <Flex padding="80px 0" borderBottom="2px solid rgba(255,255,255,.8 )" id="info-container" flexDirection={{base:'column', sm:'row'}} rowGap={{base:'50px',sm:'0'}}>
                     <Flex flexDirection="column" padding="0 15px" alignItems="center" width="100%">
-                        <AiFillHome size="46px"/>
-                        <Text fontSize="15px">
-                            Insinöörinkatu 60 A 68, 33720 Tampere, Finland
-                        </Text>
-                    </Flex>
-                    <Flex flexDirection="column" padding="0 15px" alignItems="center" width="100%">
                         <ImPhone size="46px"/>
                         <Text fontSize="15px">
                             (+358) 417 283 306

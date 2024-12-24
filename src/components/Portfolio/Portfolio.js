@@ -3,7 +3,9 @@ import {data} from '../../data/projects'
 import './Portfolio.scss'
 import {motion, AnimatePresence} from 'framer-motion';
 import {Box, Heading, Text, Button, Flex} from '@chakra-ui/react';
-import {WorkCard} from '../WorkCard/WorkCard'
+import {WorkCard} from '../WorkCard/WorkCard';
+
+const PREDEFINED_FILTERS = ['Web development', 'Backend',]
 export const Portfolio = () => {
     const [filtered, setFiltered] = useState(data);
     const [activeType, setActiveType] = useState("All");
@@ -11,11 +13,10 @@ export const Portfolio = () => {
     useEffect(()=>{
         if (activeType === "All"){
             setFiltered(data);
-        } else if (activeType === "Web development") {
+        } else if (PREDEFINED_FILTERS.includes(activeType)){
             setFiltered(data.filter((project)=>project.type.includes(activeType)))
         } else {
-
-            setFiltered(data.filter((project)=>!project.type.includes("Web development")))
+            setFiltered(data.filter((project)=>!project.type.includes(activeType)))
         }
     },[activeType])
 
@@ -28,6 +29,7 @@ export const Portfolio = () => {
             <Flex columnGap="10px">
                 <Button className={activeType==="All"?"active":""} onClick={()=>{setActiveType("All")}}>All</Button>
                 <Button className={activeType==="Web development"?"active":""} onClick={()=>{setActiveType("Web development")}}>Web development</Button>
+                <Button className={activeType==="Backend"?"active":""} onClick={()=>{setActiveType("Backend")}}>Backend development</Button>
                 <Button className={activeType==="Other"?"active":""} onClick={()=>{setActiveType("Other")}}>Other</Button>
             </Flex>
             <motion.div layout className="work-container">
