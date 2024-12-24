@@ -73,14 +73,14 @@ const data = [
         name: "Shopping website",
         type: ["Web development"],
         brief: "A fully responsive shopping website where user can buy and pay for different kind of clothings",
-        date: "",
+        date: "February, 16 2023",
         images:[
             "https://live.staticflickr.com/65535/52347940636_eab14af50c_b.jpg",
             "https://live.staticflickr.com/65535/52348367640_2a0825f516_b.jpg",
             "https://live.staticflickr.com/65535/52346985412_f4a1e827ac_b.jpg",
             "https://live.staticflickr.com/65535/52348258999_08b18bff26_b.jpg"
         ],
-        url: "https://shopping-react-2.herokuapp.com/",
+        url: "https://benevolent-torte-7eb663.netlify.app/",
         sourceCode: "https://github.com/An-Nguyen-02/Shopping-web",
         technologies: ["React", "Firebase", "Stripe", "Heroku"],
         detail: "A full fletch React Shopping website using FireStore for shop items, Stripe for payments and Register/Login function (can register via Google account as well). The most proud project I have done so far."
@@ -150,6 +150,7 @@ const data = [
     {
         id: 10,
         name: 'Study information system (SISU) replication',
+        date: 'December, 24 2022',
         type: ['Backend'],
         brief: 'A replication of Tampere University Study Information System.',
         detail: "Taking a student role, the application allow user choose courses and mark the progress as well as change user settings. I developed the API fetching and decoding so that it fits the structure of the program",
