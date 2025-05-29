@@ -11,7 +11,7 @@ import {
     MenuItem,
     Button
   } from '@chakra-ui/react';
-import myHypeImage from './MyHypeImage.png'
+import myHypeImage from './An_Nguyen.jpg'
 import ScrollMagic from 'scrollmagic';
 import {useState, useEffect } from 'react';
 import './Navigation.scss'
@@ -92,7 +92,7 @@ export const Navigation = () => {
                                 <MenuButton as={Button} 
                                     size = "md"
                                     margin = "10px 0 0 20px"           
-                                    backgroundColor="#333" 
+                                    backgroundColor="white" 
                                     borderColor="#333" 
                                     _hover={{
                                         backgroundColor: "#555"}}
@@ -100,12 +100,12 @@ export const Navigation = () => {
                                         backgroundColor: "#555"}}>
                                     Menu
                                 </MenuButton>
-                                <MenuList backgroundColor="#222" borderColor="#222">
-                                    <MenuItem as={Link} href="#home" _focus={{backgroundColor: "#555"}}>Home</MenuItem>
-                                    <MenuItem as={Link} href="#about" _focus={{backgroundColor: "#555"}}>About</MenuItem>
-                                    <MenuItem as={Link} href="#portfolio" _focus={{backgroundColor: "#555"}}>Portfolio</MenuItem>
-                                    <MenuItem as={Link} href="#bio" _focus={{backgroundColor: "#555"}}>Bio</MenuItem>
-                                    <MenuItem as={Link} href="#contact" _focus={{backgroundColor: "#555"}}>Contact</MenuItem>
+                                <MenuList sx={{ bg: "black", borderColor: "#222" }}>
+                                    <MenuItem as={Link} href="#home" _focus={{backgroundColor: "#555"}} backgroundColor='black'>Home</MenuItem>
+                                    <MenuItem as={Link} href="#about" _focus={{backgroundColor: "#555"}} backgroundColor='black'>About</MenuItem>
+                                    <MenuItem as={Link} href="#portfolio" _focus={{backgroundColor: "#555"}} backgroundColor='black'>Portfolio</MenuItem>
+                                    <MenuItem as={Link} href="#bio" _focus={{backgroundColor: "#555"}} backgroundColor='black'>Bio</MenuItem>
+                                    <MenuItem as={Link} href="#contact" _focus={{backgroundColor: "#555"}} backgroundColor='black'>Contact</MenuItem>
                                 </MenuList>
                             </Menu>
                         </Flex>

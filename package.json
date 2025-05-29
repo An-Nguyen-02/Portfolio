@@ -4,7 +4,7 @@
   "homepage": "https://an-nguyen-02.github.io/Portfolio/",
   "private": true,
   "dependencies": {
-    "@chakra-ui/react": "^2.2.4",
+    "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@testing-library/jest-dom": "^5.16.4",

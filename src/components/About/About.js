@@ -8,11 +8,11 @@ import {
     Flex,
     Link,
   } from '@chakra-ui/react';
-import CVfile from './An_Nguyen_CV.pdf';
+import CVfile from './An_Nguyen_Resume.pdf';
 import './About.scss'
-import myImage from './MyImage.jpg'
+import myImage from './an_nguyen.jpg'
 export const About = () => {
-    const currentDate = new Date()
+
     return (
         <Box id="about">
             <Box textAlign="left">
@@ -24,8 +24,7 @@ export const About = () => {
                     <Text as="b" id="title">I'm a tech enthusiast, web developer, and magician</Text>
                 </Box>
                 <Box gridArea="content" borderBottom="2px solid rgba(0,0,0,.08)">
-                    <Text textAlign="left"id="content">I am a student studying Master's degree in Software, Web, and Cloud at Tampere University who loves to try out new things, learn new technologies. I've been working with ReactJS, Ruby on Rails, Docker, PostgreSQL for {(currentDate.getFullYear() + (currentDate.getMonth()+1)/12 - 2023 - 5/12).toFixed(1)} years.
-                        Other than that, I've worked with Java, AWS for backend development. Besides from studying, I like gaming, hit the gym, play badminton, and doing some magic.
+                    <Text textAlign="left"id="content">I'm a Full-Stack Developer who loves learning new technologies and solving real-world problems with clean, maintainable code. I've worked with ReactJS, Ruby on Rails, Docker, and more for over a year and a half — and I'm always up for a new challenges.
                     </Text>
                 </Box>
                 <Box id="my-info">
