@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.92565c55.css",
-    "main.js": "/Portfolio/static/js/main.6672ff00.js",
-    "static/media/MyHypeImage.png": "/Portfolio/static/media/MyHypeImage.f2fc6c3e66106d636882.png",
-    "static/media/An_Nguyen_CV.pdf": "/Portfolio/static/media/An_Nguyen_CV.833836b611f9465bbec7.pdf",
-    "static/media/MyImage.jpg": "/Portfolio/static/media/MyImage.760eb38a436c021acc3c.jpg",
+    "main.css": "/Portfolio/static/css/main.aa984b21.css",
+    "main.js": "/Portfolio/static/js/main.def96852.js",
+    "static/media/an_nguyen.jpg": "/Portfolio/static/media/an_nguyen.007cceacda10a3b89bb2.jpg",
+    "static/media/An_Nguyen_Resume.pdf": "/Portfolio/static/media/An_Nguyen_Resume.c4bfdb594dc6e00b86eb.pdf",
+    "static/media/An_Nguyen.jpg": "/Portfolio/static/media/An_Nguyen.5fdf118699afdfc01f55.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.92565c55.css.map": "/Portfolio/static/css/main.92565c55.css.map",
-    "main.6672ff00.js.map": "/Portfolio/static/js/main.6672ff00.js.map"
+    "main.aa984b21.css.map": "/Portfolio/static/css/main.aa984b21.css.map",
+    "main.def96852.js.map": "/Portfolio/static/js/main.def96852.js.map"
   },
   "entrypoints": [
-    "static/css/main.92565c55.css",
-    "static/js/main.6672ff00.js"
+    "static/css/main.aa984b21.css",
+    "static/js/main.def96852.js"
   ]
 }
